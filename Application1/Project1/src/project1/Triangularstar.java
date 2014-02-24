@@ -10,7 +10,7 @@ public class Triangularstar {
                         for(j=1;j=i;j++){
                                            System.out.println("*");
                                          }
-        System.out.println();
+        System.out.println("test");
       }
                       
     }
