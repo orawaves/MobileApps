@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Buzz Me</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="contextMenu">Send SMS</string>
+    <string name="toast">Toast</string>
+    <string name="statusbar">Status Bar</string>
+    <string name="dialog">Dialog</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+    <string name="title_activity_adapters">AdaptersActivity</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="title_activity_dialog_box">Dialog Box Activity</string>
+    <string name="Change_Date">Change Date</string>
+    <string name="currentDate">Current Date (M-D-YYYY):</string>
+    <string name="listAdapter">List Adapter</string>
+    <string name="phone">Phone Number</string>
+    <string name="sendmsg">Send Message</string>
+    <string name="cursorAdapter">Cursor Adapter</string>
+    <string name="title_activity_cursor_adapter">Cursor Adapter Activity</string>
+    <string name="selcontact">Select Contact</string>
+    <string name="searchBtn">Search</string>
+    <string name="title_activity_auto_complete">Auto Complete Activity</string>
+    <string name="title_activity_auto_complete_new">Auto Complete New Activity</string>
+    <string name="title_activity_db_operations">DbOperationsActivity</string>
+    <string name="create">Create</string>
+    <string name="read">Read</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="insert">Insert</string>
+    <string name="title_activity_accordion_example">Accordion Example Activity</string>
+    <string name="reminder">Reminder</string>
+    <string name="settings">Settings</string>
+    <string name="email">Email</string>
+    <string name="sms">SMS</string>
+    <string name="scheduleMsg">Schedule Message</string>
+    <string name="seldate">Select Date</string>
+    <string name="seltime">Select Time</string>
+    <string name="contPick">Contact Picker</string>
+    <string name="title_activity_main_activity1">MainActivity1</string>
+    <string name="facebook">Facebook</string>
+    <string name="post">Post Message</string>
+    <string name="share">Share</string>
+    <string name="social">Social</string>
+    <string name="Search">Search</string>
+
+</resources>

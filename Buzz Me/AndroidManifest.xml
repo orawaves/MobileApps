@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mytestapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />    
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/my_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mytestapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.NotificationsActivity"
+            android:label="@string/title_activity_notifications" >
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.AdaptersActivity"
+            android:label="@string/title_activity_adapters" >
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.DialogBoxActivity"
+            android:label="@string/title_activity_dialog_box" >
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.CursorAdapterActivity"
+            android:label="@string/title_activity_cursor_adapter" >
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.AutoCompleteActivity"
+            android:label="@string/title_activity_auto_complete" >
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.AutoCompleteNewActivity"
+            android:label="@string/title_activity_auto_complete_new" >
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.DbOperationsActivity"
+            android:label="@string/title_activity_db_operations" >
+        </activity>
+        <activity
+            android:name="com.example.mytestapp.AccordionExampleActivity"
+            android:label="@string/title_activity_accordion_example" >
+        </activity>
+
+        <receiver android:name="com.example.mytestapp.AlarmReciever" />
+
+        <activity
+            android:name="com.example.mytestapp.MainActivity1"
+            android:label="@string/title_activity_main_activity1" >
+        </activity>
+    </application>
+
+</manifest>
