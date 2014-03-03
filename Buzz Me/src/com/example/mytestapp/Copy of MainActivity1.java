@@ -9,6 +9,7 @@ public class MainActivity1 extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		System.out.println("Testing GITHUB");
 		setContentView(R.layout.activity_main_activity1);
 	}
 

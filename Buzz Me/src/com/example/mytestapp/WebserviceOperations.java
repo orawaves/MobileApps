@@ -182,48 +182,48 @@ public class WebserviceOperations {
 	public void parseStaticJson() {		
 //		String strJson = "{\"Android\" : [{\"song_name\":\"Gimme Dat\",\"song_id\":\"1932\",\"artist_name\":\"Sidney Samson (Feat. Pitbull & Akon)\"},{\"song_name\":\"F-k The Money (Remix)\",\"song_id\":\"73\",\"artist_name\":\"B.o.B. (Feat. Wiz Khalifa)\"}]}";
 		
-		final String yummly = "{"
-            "attributes": {
-                "course": [
-                    "Soups"
-                ],
-                "cuisine": [
-                    "Italian"
-                ]
-            },
-            "flavors": {
-                "salty": 0.6666666666666666,
-                "sour": 0.8333333333333334,
-                "sweet": 0.6666666666666666,
-                "bitter": 0.5,
-                "meaty": 0.16666666666666666,
-                "piquant": 0.5
-            },
-            "rating": 4.6,
-            "id": "Vegetarian-Cabbage-Soup-Recipezaar",
-            "smallImageUrls": [],
-            "sourceDisplayName": "Food.com",
-            "totalTimeInSeconds": 4500,
-            "ingredients": [
-                "garlic cloves",
-                "ground pepper",
-                "diced tomatoes",
-                "celery",
-                "tomato juice",
-                "salt",
-                "cabbage",
-                "bell peppers",
-                "oregano",
-                "carrots",
-                "basil",
-                "vegetable broth",
-                "chili pepper flakes",
-                "green beans",
-                "onions",
-                "onion soup mix"
-            ],
-            "recipeName": "Vegetarian Cabbage Soup"
-        }"
+//		final String yummly = "{"
+//            "attributes": {
+//                "course": [
+//                    "Soups"
+//                ],
+//                "cuisine": [
+//                    "Italian"
+//                ]
+//            },
+//            "flavors": {
+//                "salty": 0.6666666666666666,
+//                "sour": 0.8333333333333334,
+//                "sweet": 0.6666666666666666,
+//                "bitter": 0.5,
+//                "meaty": 0.16666666666666666,
+//                "piquant": 0.5
+//            },
+//            "rating": 4.6,
+//            "id": "Vegetarian-Cabbage-Soup-Recipezaar",
+//            "smallImageUrls": [],
+//            "sourceDisplayName": "Food.com",
+//            "totalTimeInSeconds": 4500,
+//            "ingredients": [
+//                "garlic cloves",
+//                "ground pepper",
+//                "diced tomatoes",
+//                "celery",
+//                "tomato juice",
+//                "salt",
+//                "cabbage",
+//                "bell peppers",
+//                "oregano",
+//                "carrots",
+//                "basil",
+//                "vegetable broth",
+//                "chili pepper flakes",
+//                "green beans",
+//                "onions",
+//                "onion soup mix"
+//            ],
+//            "recipeName": "Vegetarian Cabbage Soup"
+//        }"
 		
         final String strJson = "{ "
         							+ "\"Android\" :"
