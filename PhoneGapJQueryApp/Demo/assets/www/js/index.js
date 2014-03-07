@@ -1,19 +1,16 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-    alert("start onDeviceReady");
     var options = new ContactFindOptions();
-    options.filter = "Hcove";
+    options.filter = "HCove";
     options.multiple = true; 
     var fields = ["displayName", "name", "phoneNumbers"];
     navigator.contacts.find(fields, onSuccess, onError, options);
-    alert("end onDeviceReady");
 }
 
 function onSuccess(contacts) {
-	alert("inside success")
 	  for(var i = 0; i < contacts.length; i++) {
-	    var html = '<div data-role="collapsible" data-inset="false">';
+	    var html = '<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-inset="false">';
 
 	    html += '<h2>' + contacts[i].displayName + '</h2>';
 	    html += '<ul data-role="listview">'
@@ -38,3 +35,19 @@ function onSuccess(contacts) {
 	function onError(contactError) {
 	  alert('onError!');
 	}
+	
+	
+//	$( document ).on( "pageinit", "#demo-page", function() {
+//	    $( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
+//	        // We check if there is no open panel on the page because otherwise
+//	        // a swipe to close the left panel would also open the right panel (and v.v.).
+//	        // We do this by checking the data that the framework stores on the page element (panel: open).
+//	        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+//	            if ( e.type === "swipeleft"  ) {
+//	                $( "#rightPanel" ).panel( "open" );
+//	            } else if ( e.type === "swiperight" ) {
+//	                $( "#leftPanel" ).panel( "open" );
+//	            }
+//	        }
+//	    });
+//	});

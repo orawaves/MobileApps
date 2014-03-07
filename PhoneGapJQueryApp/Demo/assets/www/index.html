@@ -3,52 +3,76 @@
 	    <head>
 		    <title>PhoneGap Demo</title>
 		    <meta name="viewport" content="width=device-width, initial-scale=1">
-		    <link rel="stylesheet" type="text/css" href="jquery/css/jquery.mobile-1.4.2.min.css"/>
-		    <script type="text/javascript" charset="utf-8" src="jquery/jquery-1.5.2.min.js"></script>
-		    <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile-1.4.2.min.js"></script>
-		    <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
+		    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+			<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 		    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+		    <!-- script type="text/javascript" charset="utf-8" src="css/my.css"></script-->
+		    <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>	  
+		    <style type="text/css">
+			    .ui-page .ui-header {
+			        background: #FFFFFF;
+			    }
+			    .ui-page .ui-footer {
+			        background: #FFFFFF;
+			    }
+		    </style>  
 	    </head>
 	    <body>
 			<div id="contactsPage" data-role="page">	
 				<div data-role="header">
+					<!-- a href="#leftPanel"><img src="images/slidePanel.png" class="ui-btn-left" /></a-->
+					<a href="#leftPanel" data-role="button" data-icon="bars" data-theme="b">Slide</a> 
 					<h1>Show Contacts</h1>
+					<a href="#rightPanel" data-role="button" data-position="right" data-theme="e">Sign in</a>
 				</div>
 			
 				<div data-role="content">	
 					<div id="contactsList">
 					</div>
 				</div>
+				
+				<div data-role="panel" id="rightPanel" data-position="right" data-display="overlay"> 
+				    <h2>Right Panel</h2>				    
+				  </div> 
+				  
+				 <div data-role="panel" id="leftPanel"> 
+				    <h2>Left Panel</h2>				    
+				  </div> 
+				
+				<div data-role="footer">
+				    <h1>Insert Footer Text Here</h1>
+				  </div>
 			</div>
 	    </body>
     </html>
     
-    <!--html>
-    <head>
-    <title>PhoneGap Demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="jquery/css/jquery.mobile-1.4.0.min.css"/>
-    <script type="text/javascript" charset="utf-8" src="jquery/jquery-1.5.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile-1.4.0.js"></script>
-    <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
-    <script type="text/javascript" charset="utf-8">    
-    document.addEventListener("deviceready", onDeviceReady, false);
+    <!-- DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+</head>
+<body>
 
-    function onDeviceReady() {
-		alert("OnDeviceReady");
-        var options = new ContactFindOptions();
-        alert("OnDeviceReady 2");
-    }
-    </script>
-    </head>
-    <body>
-		<div data-role="page" id="main">
-		<div data-role="header">
-		<h1>PhoneGap Demo</h1>
-		</div>
-		<div data-role="content">
-		Hello, this is JQuery Mobile running in PhoneGap 2
-		</div>
-		</div>
-    </body>
-    </html-->
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Collapsible Blocks</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible">
+      <h1>Click me - I'm collapsible!</h1>
+      <p>I'm the expanded content.</p>
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>Insert Footer Text Here</h1>
+  </div>
+</div> 
+
+</body>
+</html-->
