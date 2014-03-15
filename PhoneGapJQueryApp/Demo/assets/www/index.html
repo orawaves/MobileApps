@@ -1,53 +1,125 @@
-    <!DOCTYPE HTML>
-    <html>
-	    <head>
-		    <title>PhoneGap Demo</title>
-		    <meta name="viewport" content="width=device-width, initial-scale=1">
-		    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
-			<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-			<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
-		    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
-		    <!-- script type="text/javascript" charset="utf-8" src="css/my.css"></script-->
-		    <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>	  
-		    <style type="text/css">
-			    .ui-page .ui-header {
-			        background: #FFFFFF;
-			    }
-			    .ui-page .ui-footer {
-			        background: #FFFFFF;
-			    }
-		    </style>  
-	    </head>
-	    <body>
-			<div id="contactsPage" data-role="page">	
-				<div data-role="header">
-					<!-- a href="#leftPanel"><img src="images/slidePanel.png" class="ui-btn-left" /></a-->
-					<a href="#leftPanel" data-role="button" data-icon="bars" data-theme="b">Slide</a> 
-					<h1>Show Contacts</h1>
-					<a href="#rightPanel" data-role="button" data-position="right" data-theme="e">Sign in</a>
-				</div>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PhoneGap Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+<link rel="stylesheet"
+	href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+<!-- script type="text/javascript" charset="utf-8" src="css/my.css"></script-->
+<script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
+<script>
+	$(document).on("pageshow",function() {
+		alert("hahaha");		
+		var sugList = $("#suggestions");
+		$("#searchField").on("input", function(e) {
+			alert("hehehe");
+	        var text = $(this).val();
+		}
+	});
+</script>
+<style type="text/css">
+	.ui-dialog .ui-dialog-contain { 
+		width: 92.5%; 
+		max-width: 500px; 
+		margin: 10% auto
+		15px auto; 
+		padding: 0; 
+		position: top; 
+		top: -15px;
+	}
+</style>
+
+
+</head>
+<body>
+
+	<div id="contactsPage" data-role="page">
+		<div data-role="header">
+			<a href="#leftPanel" data-role="button" data-icon="bars">Slide</a>
+			<h1>Show Contacts</h1>
+			<a href="#rightPanel" data-role="button" data-position="right">Sign
+				in</a>
+		</div>
+		<div data-role="content">
 			
-				<div data-role="content">	
+			<p>
+				<input type="text" id="searchField" placeholder="Search" />
+				<ul id="suggestions" data-role="listview" data-inset="true"></ul>
+			</p>
+		
+			<a href="#myPopupDialog" data-rel="popup" data-position-to="window"
+					data-transition="fade"
+					class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Open Dialog
+					Popup</a>
+		</div>
+
+		<!-- div data-role="content" id="contactsList">	
 					<div id="contactsList">
 					</div>
-				</div>
-				
-				<div data-role="panel" id="rightPanel" data-position="right" data-display="overlay"> 
-				    <h2>Right Panel</h2>				    
-				  </div> 
-				  
-				 <div data-role="panel" id="leftPanel"> 
-				    <h2>Left Panel</h2>				    
-				  </div> 
-				
-				<div data-role="footer">
-				    <h1>Insert Footer Text Here</h1>
-				  </div>
+				</div-->
+
+		<div data-role="panel" id="rightPanel" data-position="right"
+			data-display="overlay">
+			<h4>Right Panel</h4>
+			<a href="#myPhotoPopup" data-rel="popup" data-position-to="window">
+				<img src="images/1607517.jpg" alt="View" style="width: 100px;">
+			</a>
+		</div>
+
+		<div data-role="panel" id="leftPanel">
+			<h4>Left Panel</h4>
+			<a href="#myPopup" data-rel="popup"
+				class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a> 
+			 
+		</div>
+
+		<div data-role="popup" id="myPopupDialog" data-theme="e">
+			<div data-role="header">
+				<h2>Contacts Dialog</h1>
 			</div>
-	    </body>
-    </html>
-    
-    <!-- DOCTYPE html>
+
+			<div data-role="main" class="ui-content">
+				<div data-role="content">
+					<div id="contactsList"></div>
+				</div>
+				<a href="#"
+					class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left"
+					data-rel="back">Go Back</a>
+			</div>
+
+			<div data-role="footer">
+				<h2>Footer in Dialog</h1>
+			</div>
+		</div>
+
+
+
+		<div data-role="popup" id="myPopup">
+			<p>This is a simple popup.</p>
+			<img src="images/1.jpg" style="width: 400px; height: 200px;"
+				alt="View">
+		</div>
+
+		<div data-role="popup" id="myPhotoPopup">
+			<img src="images/1607517.jpg" style="width: 500px; height: 300px;"
+				alt="View">
+		</div>
+
+		<div data-role="footer">
+			<h1>Footer</h1>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">

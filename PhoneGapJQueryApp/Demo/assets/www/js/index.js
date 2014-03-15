@@ -12,8 +12,8 @@ function onSuccess(contacts) {
 	  for(var i = 0; i < contacts.length; i++) {
 	    var html = '<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-inset="false">';
 
-	    html += '<h2>' + contacts[i].displayName + '</h2>';
-	    html += '<ul data-role="listview">'
+	    html += '<h4>' + contacts[i].displayName + '</h4>';
+	    html += '<ul data-role="listview" data-inset="true">'
 
 	    var contact = contacts[i];
 
@@ -36,8 +36,19 @@ function onSuccess(contacts) {
 	  alert('onError!');
 	}
 	
+	//$("#contactsPage").on("pageshow", function(e) {
+//	$(document).on("pageshow","#contactsPage", function(e) {
+//		console.log("Autocomplete");
+//		alert("hahaha");
+//		var sugList = $("#suggestions");
+//		$("#searchField").on("input", function(e) {
+//			alert("hehehe");
+//	        var text = $(this).val();
+//		}
+//	});
 	
-//	$( document ).on( "pageinit", "#demo-page", function() {
+	
+// $( document ).on( "pageinit", "#demo-page", function() {
 //	    $( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
 //	        // We check if there is no open panel on the page because otherwise
 //	        // a swipe to close the left panel would also open the right panel (and v.v.).
