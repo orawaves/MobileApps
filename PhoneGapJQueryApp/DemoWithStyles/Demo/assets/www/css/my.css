@@ -1,0 +1,14 @@
+
+.custom_header {backgroud-color:#a1dbb2}
+.custom_header_text {padding:1px; text-align:center;color:blue;}
+.custom_header h1 {font-size:20px;}
+
+.ui-dialog .ui-dialog-contain { 
+		width: 92.5%; 
+		max-width: 500px; 
+		margin: 10% auto
+		15px auto; 
+		padding: 0; 
+		position: top; 
+		top: -15px;
+	}

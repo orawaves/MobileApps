@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert title here</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js" ></script>
+	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/facebook.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1">
+<div data-role="header" data-theme="a">
+<h1>
+Facebook Phonegap Application</h1>
+</div>
+<div data-role="content">
+<div id="auth-status">
+Hi, <span id="auth-displayname"></span>
+
+
+
+
+<div data-role="navbar">
+<ul>
+<li><a class="ui-btn-active" href="FriendsList.html" onclick="getUserFriends();">Get friends</a></li>
+<li><a href="http://www.blogger.com/Logout.html" id="auth-logoutlink">logout</a></li>
+</ul>
+</div>
+<ul data-inset="true" data-role="listview" data-theme="b" id="categorieslist"></ul>
+</div>
+</div>
+</div>
+	
+</body>
+</html>
